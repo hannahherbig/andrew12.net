@@ -17,13 +17,6 @@ compile '/stylesheet/' do
   # don’t filter or layout
 end
 
-compile '/posts/*' do
-  filter :erb
-  filter :kramdown if item[:extension] == 'md'
-
-  layout 'post'
-end
-
 compile '*' do
   if item.binary?
     # don’t filter binary items
@@ -31,7 +24,11 @@ compile '*' do
     filter :erb
     filter :kramdown if item[:extension] == 'md'
 
-    layout 'default'
+    if item.identifier.include? 'posts'
+      layout 'post'
+    else
+      layout 'default'
+    end
   end
 end
 
