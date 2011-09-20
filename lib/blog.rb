@@ -11,6 +11,10 @@ def posts
   end.reverse
 end
 
+def last_post?(post)
+  posts.last == post
+end
+
 def format_time(str)
   Time.parse(str.to_s).strftime("%a %b %d %Y")
 end

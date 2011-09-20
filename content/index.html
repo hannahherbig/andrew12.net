@@ -3,7 +3,7 @@ title: home
 ---
 
 <% posts.each do |post| %>
-  <div class="post">
+  <div class="post<% unless last_post?(post) %> border<% end %>">
     <h2><a href="<%= post.identifier %>">&#8594; <%= post[:title] %></a></h2>
     <div class="date"><%= format_time post[:created_at] %></div>
     <div>
