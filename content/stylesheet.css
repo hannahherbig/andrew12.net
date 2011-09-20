@@ -151,21 +151,6 @@ abbr {
   border-top: 1px #444 solid;
 }
 
-a#malkier {
-  text-decoration: none;
-
-  color:   #ccccd9;
-  outline: 0;
-
-  text-shadow: #16161a 1px 1px 0;
-}
-
-a#malkier:hover {
-  color: #fff;
-  text-shadow: #ccccd9 0 0 10px;
-  -webkit-transition: 0.5s text-shadow;
-}
-
 li code, p code {
   border: 1px #444 solid;
   padding: 2px;

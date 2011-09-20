@@ -50,4 +50,5 @@ route '*' do
 end
 
 layout 'sidebar', :kramdown
+layout 'footer', :kramdown
 layout '*', :erb
