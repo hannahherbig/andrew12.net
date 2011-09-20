@@ -151,7 +151,7 @@ abbr {
   border-top: 1px #444 solid;
 }
 
-#footer p a#malkier {
+a#malkier {
   text-decoration: none;
 
   color:   #ccccd9;
@@ -160,10 +160,10 @@ abbr {
   text-shadow: #16161a 1px 1px 0;
 }
 
-#footer p a#malkier:hover {
+a#malkier:hover {
   color: #fff;
   text-shadow: #ccccd9 0 0 10px;
-  -webkit-transition:    0.5s text-shadow;
+  -webkit-transition: 0.5s text-shadow;
 }
 
 li code, p code {
