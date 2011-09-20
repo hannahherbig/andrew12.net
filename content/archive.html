@@ -1,0 +1,11 @@
+---
+title: The Archive
+---
+
+<h2>&#8594; The Archive</h2>
+
+<ul id="archive-list">
+  <% posts.each do |post| %>
+    <li><%= format_time post[:created_at] %> - <a href="<%= post.identifier %>"><%= post[:title] %></a></li>
+  <% end %>
+</ul>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>andrew12 - <%= item[:title] %></title>
+  <meta name="keywords" content="ruby, python, hacking" />
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="header">
+      <a href="/">andrew12</a>
+    </div>
+
+    <div id="main">
+
+      <%= yield %>
+
+    </div>
+
+    <div id="sidebar">
+      <%= render 'sidebar' %>
+    </div>
+
+    <div id="footer">
+      Copyright &copy; 2011 Andrew Herbig
+
+      <p><a id="malkier" href='http://www.malkier.net/'>tai'shar malkier</a></p>
+    </div>
+  </div>
+</body>
+
+</html>

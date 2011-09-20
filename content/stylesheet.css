@@ -1,0 +1,235 @@
+body {
+  background: url(images/bg.png) repeat;
+  font-family: helvetica, arial, sans-serif;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+  color: #eee;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+  text-shadow: #0c0c0c 2px 2px 1px;
+}
+
+#gist a {
+  text-shadow: none;
+}
+
+abbr {
+  border-bottom: none;
+}
+
+#wrap {
+  margin:0 auto;
+  width: 999px;
+}
+
+#header {
+  line-height: 50px;
+  letter-spacing: -10px;
+  font-size: 7em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#header a {
+  color: black;
+  text-decoration: none;
+  text-shadow: #0c0c0c 15px 10px 50px;
+}
+
+#main {
+  float:left;
+  width: 700px;
+}
+
+#main .border {
+  border-bottom: 1px #444 solid;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+#main img {
+  margin: 10px;
+}
+
+#main .photo {
+  text-align: center;
+}
+
+#main .photo img {
+  border: 2px #444 solid;
+}
+
+#main h2 {
+  font-weight: normal;
+  letter-spacing: -5px;
+  font-size: 4em;
+  color: red;
+  text-shadow: #0c0c0c 2px 2px 10px;
+  padding: 0;
+  margin: 0;
+  text-transform: lowercase;
+}
+
+#main h2 a {
+  text-shadow: #0c0c0c 2px 2px 10px;
+}
+
+#main .date {
+  text-align: right;
+}
+
+#main p {
+  margin: 10px 0 25px 0;
+  font-size: 105%;
+  font-family: verdana;
+  line-height: 1.6em;
+  text-align: justify;
+}
+
+#main ul {
+  margin-top: -15px;
+}
+
+#main li {
+  line-height: 150%;
+}
+
+#archive {
+  font-size: 120%;
+  padding-bottom: 20px;
+}
+
+#archive-list {
+  padding-top: 2em;
+}
+
+#archive-list li {
+  font-size: 125%;
+  line-height: 30px;
+}
+
+#sidebar {
+  float: right;
+  width: 250px;
+  border-left: 1px #444 solid;
+  padding-left: 25px;
+}
+
+#sidebar h3 {
+  margin: 20px 0 0 0;;
+}
+
+#sidebar h3 a {
+  color: #eee;
+  text-shadow: none;
+}
+
+#sidebar p {
+  margin: 10px 0 30px 0;
+  line-height: 23px;
+}
+
+#sidebar ul {
+  margin: 10px 0 20px 0;
+  padding: 0 0 0 18px;
+}
+
+#sidebar li {
+  padding-bottom: 10px
+}
+
+#footer {
+  padding: 20px 0 10px 0;
+  clear: both;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: #0c0c0c 2px 2px 1px;
+  border-top: 1px #444 solid;
+}
+
+#footer p a#malkier {
+  text-decoration: none;
+
+  color:   #ccccd9;
+  outline: 0;
+
+  text-shadow: #16161a 1px 1px 0;
+}
+
+#footer p a#malkier:hover {
+  color: #fff;
+  text-shadow: #ccccd9 0 0 10px;
+  -webkit-transition:    0.5s text-shadow;
+}
+
+li code, p code {
+  border: 1px #444 solid;
+  padding: 2px;
+  font-size: 130%;
+  background: black;
+  text-align: left;
+}
+
+pre {
+  margin: 0 0 27px 0;
+  border: 1px #444 solid;
+  padding: 10px;
+  font-size: 130%;
+  line-height: 140%;
+  background: black;
+  text-align: left;
+}
+
+.highlight .s, .highlight .s2, .highlight .s1 {
+  color: #ff0000;
+}
+.highlight .k, .highlight .nfz {
+  color: #f800f2;
+}
+.highlight .c1 {
+  color: #38D;
+}
+.highlight .p {
+  color: #777;
+}
+.highlight .asdsad {
+  color: #b41;
+}
+.highlight .ss {
+  color: #00fb79;
+}
+.highlight .vi {
+  color: #37ffff;
+}
+.highlight .nc, .highlight .no {
+  color: #37ffff;
+}
+.highlight .blah {
+  color: #fff800;
+}
+
+.gist {
+  color: #fff !important;
+}
+
+.gist-file {
+   border: 1px #444 solid !important;
+}
+
+.gist .gist-file .gist-data {
+  background-color: #000 !important;
+  font-size: 90% !important;
+  border-bottom: none !important;
+}
+
+.gist-meta {
+  display: none !important;
+}
+
+.gist-syntax .kp, .gist-syntax .k, .gist-syntax .o {
+  color: #ccc !important;
+}
