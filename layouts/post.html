@@ -1,9 +1,0 @@
-<% render 'default' do %>
-  <div class="post">
-    <h2><a href="<%= item.identifier %>">&#8594; <%= item[:title] %></a></h2>
-    <div class="date"><%= format_time item[:created_at] %></div>
-    <div>
-      <%= yield %>
-    </div>
-  </div>
-<% end %>

@@ -151,52 +151,6 @@ abbr {
   border-top: 1px #444 solid;
 }
 
-li code, p code {
-  border: 1px #444 solid;
-  padding: 2px;
-  font-size: 130%;
-  background: black;
-  text-align: left;
-}
-
-pre {
-  margin: 0 0 27px 0;
-  border: 1px #444 solid;
-  padding: 10px;
-  font-size: 130%;
-  line-height: 140%;
-  background: black;
-  text-align: left;
-}
-
-.highlight .s, .highlight .s2, .highlight .s1 {
-  color: #ff0000;
-}
-.highlight .k, .highlight .nfz {
-  color: #f800f2;
-}
-.highlight .c1 {
-  color: #38D;
-}
-.highlight .p {
-  color: #777;
-}
-.highlight .asdsad {
-  color: #b41;
-}
-.highlight .ss {
-  color: #00fb79;
-}
-.highlight .vi {
-  color: #37ffff;
-}
-.highlight .nc, .highlight .no {
-  color: #37ffff;
-}
-.highlight .blah {
-  color: #fff800;
-}
-
 .gist {
   color: #fff !important;
 }

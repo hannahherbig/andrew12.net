@@ -1,0 +1,5 @@
+.post
+  h2
+    a href="#{item.identifier}" &#8594; #{item[:title]}
+  .date = format_time item[:created_at]
+  div == yield

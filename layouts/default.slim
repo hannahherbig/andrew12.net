@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+    title andrew12 - #{item[:title]}
+    meta name="keywords" content="ruby, python, hacking"
+    link href="/style.css" rel="stylesheet" type="text/css"
+    link href="/code.css" rel="stylesheet" type="text/css"
+  body
+    #wrap
+      #header
+        a href="/" andrew12
+      #main
+        == yield
+      #sidebar == render 'sidebar'
+      #footer  == render 'footer'
