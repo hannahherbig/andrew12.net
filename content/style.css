@@ -151,6 +151,24 @@ abbr {
   border-top: 1px #444 solid;
 }
 
+li code, p code {
+  border: 1px #444 solid;
+  padding: 2px;
+  font-size: 130%;
+  background: black;
+  text-align: left;
+}
+
+pre {
+  margin: 0 0 27px 0;
+  border: 1px #444 solid;
+  padding: 10px;
+  font-size: 130%;
+  line-height: 140%;
+  background: black;
+  text-align: left;
+}
+
 .gist {
   color: #fff !important;
 }
