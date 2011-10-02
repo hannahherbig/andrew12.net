@@ -27,3 +27,5 @@ client = IRC::Client.new do |c|
     c.log_level    = :info
 end
 <% end %>
+
+**EDIT**: Nevermind, that was a really bad idea for a few different reasons...
