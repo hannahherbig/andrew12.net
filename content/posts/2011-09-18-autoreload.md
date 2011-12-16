@@ -5,7 +5,8 @@ created_at: 2011-09-18
 
 Put this in any folder where you want files from there to be automatically reloaded, e.g. `lib`, then require this file.
 
-<% code :ruby do %>
+{{#code}}
+ruby
 require 'fssm' # gem install fssm
 
 Thread.abort_on_exception = true
@@ -25,4 +26,4 @@ Thread.new do
     end
   end
 end
-<% end %>
+{{/code}}

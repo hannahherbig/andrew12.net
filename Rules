@@ -3,22 +3,25 @@
 # A few helpful tips about the Rules file:
 #
 # * The string given to #compile and #route are matching patterns for
-#   identifiers--not for paths. Therefore, you can’t match on extension.
+#   identifiers--not for paths. Therefore, you can't match on extension.
 #
 # * The order of rules is important: for each item, only the first matching
 #   rule is applied.
 #
-# * Item identifiers start and end with a slash (e.g. “/about/” for the file
-#   “content/about.html”). To select all children, grandchildren, … of an
-#   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
-#   because “*” matches zero or more characters.
+# * Item identifiers start and end with a slash (e.g. "/about/" for the file
+#   "content/about.html"). To select all children, grandchildren, ... of an
+#   item, use the pattern "/about/*/"; "/about/*" will also select the parent,
+#   because "*" matches zero or more characters.
 
 compile '*' do
   if item.binary? || item[:extension] == 'css'
-    # don’t filter
+    # don't filter
   else
     filter :erb
-    filter :kramdown if item[:extension] == 'md'
+    if item[:extension] == 'md'
+      filter :mustache
+      filter :kramdown
+    end
 
     if item.identifier.include? 'posts'
       layout 'post'

@@ -1,4 +1,4 @@
-# nanoc's Blogging helper is too compilcated for me, we're going to use this
+# nanoc's Blogging helper is too complicated for me, we're going to use this
 # instead.
 
 require 'time'

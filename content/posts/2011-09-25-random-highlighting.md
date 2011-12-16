@@ -10,7 +10,8 @@ to look at, to play around with it.
 
 [example]: https://github.com/rakaur/rhuidean/blob/master/EXAMPLE.md
 
-<% code :ruby do %>
+{{#code}}
+ruby
 client = IRC::Client.new do |c|
     c.server   = "irc.example.com"
     c.port     = 6667
@@ -26,6 +27,6 @@ client = IRC::Client.new do |c|
     c.logger       = Logger.new($stdout)
     c.log_level    = :info
 end
-<% end %>
+{{/code}}
 
 **EDIT**: Nevermind, that was a really bad idea for a few different reasons...

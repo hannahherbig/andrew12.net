@@ -60,4 +60,4 @@ watcher:
 
 deploy:
   default:
-    dst: "root@andrew12.net:/var/www"
+    dst: "andrew12.net:www/andrew12.net"

@@ -1,1 +1,1 @@
-require 'nanoc3/tasks'
+require 'nanoc3/tasks' # load nanoc's tasks

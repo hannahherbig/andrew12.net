@@ -11,8 +11,9 @@ The code for this site is on [github][], and I'll be pushing to github whenever 
 
 I didn't use any fancy blogging helpers (i.e. `Nanoc3::Helpers::Blogging`), but instead I wrote my own helper methods:
 
-<% code :ruby do %>
-# nanoc's Blogging helper is too compilcated for me, we're going to
+{{#code}}
+ruby
+# nanoc's Blogging helper is too complicated for me, we're going to
 # use this instead.
 
 require 'time'
@@ -28,7 +29,7 @@ end
 def format_time(str)
   Time.parse(str.to_s).strftime("%a %b %d %Y")
 end
-<% end %>
+{{/code}}
 
 There's also a `code` method so I can do something like this:
 
@@ -38,9 +39,10 @@ There's also a `code` method so I can do something like this:
 
 and get this:
 
-<% code :ruby do %>
+{{#code}}
+ruby
 puts "when I grow up I want to be printed"
-<% end %>
+{{/code}}
 
 Cool, huh?
 
